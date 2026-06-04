@@ -3,6 +3,7 @@ import React from 'react';
 import HomePage from './Pages/HomePage';
 import MainLayout from './Layouts/MainLayout';
 import JobsPage from './Pages/JobsPage';
+import JobPage from './Pages/JobPage';
 
 
 const router = createBrowserRouter(
@@ -10,6 +11,7 @@ const router = createBrowserRouter(
   <Route path = '/' element = {<MainLayout />}>
     <Route index element ={<HomePage />} />
     <Route path='/jobs' element ={<JobsPage />} />
+    <Route path='/jobs/:id' element ={<JobPage />} />
   </Route>
   ) 
 );
